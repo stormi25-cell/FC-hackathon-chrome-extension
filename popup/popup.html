@@ -4,32 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go!Go!Health</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- <script defer src="popup/popup.js">
-      function click() {
-        alert('oop');
-      }
-    </script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="popup.js"></script>
   </head>
-  <body>
+  <body id="body">
     <br />
     <div>
-      <form id="food-form">
-        <label for="food"></label>
-        <input type="text" id="food" name="food" placeholder="Enter a food" />
+      <form id="food-form" action="">
+        <label for="food" required>Food:</label>
+        <input
+          type="text"
+          id="food"
+          name="food"
+          placeholder="Enter a food"
+          maxlength="15"
+        />
+        <!-- <input id="submit" type="submit" /><br /> -->
+        <button id="submit" class="submit" type="submit">Submit</button><br />
+        <input id="reset" type="reset" />
+        <!-- <button id="reset" class="reset" type="button">Reset</button><br /> -->
       </form>
     </div>
-    <section id="output">
-      <h1>Results</h1>
+
+    <section id="NuInf">
+      Nutrition Info <br />
+      <!-- Where inner HTML will populate-->
+
+      <section></section>
     </section>
 
-    <button class="submit" type="button">Submit</button><br />
-    <section id="info">
-      Info Box
-      <section>
-        <p>TestBox</p>
-      </section>
-    </section>
-    <script src="popup/popup.js"></script>
+    <!-- possibly a diff section underneath that resets the text and allows the user to input another food item to get nutritional info -->
+    <!-- <script src="popup.js"></script> -->
   </body>
 </html>

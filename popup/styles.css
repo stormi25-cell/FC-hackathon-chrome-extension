@@ -1,0 +1,12 @@
+body {
+  background-color: aqua;
+  color: black;
+  font-family:darlington-signature;
+  padding: 10px;
+  max-width: 100%;
+}
+
+#submit {
+  color: green;
+}
+
