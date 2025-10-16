@@ -5,16 +5,9 @@
   "version": "1.0",
   "action": {
     "default_popup": "popup/popup.html",
-    "default_title": "",
-    "default_icon": ""
+    "default_title": ""
   },
   "icons": {
-    "16": "images/",
-    "32": "images/",
-    "48": "images/",
-    "128": "images/"
-  },
-  "background": {
-    "service_worker": "background.js"
+    "128": "popup/Go_Go_Health.png"
   }
 }
