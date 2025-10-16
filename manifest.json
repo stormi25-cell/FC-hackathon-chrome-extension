@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "manifest_version": 3,
     "name":,
     "description":,
@@ -20,3 +21,17 @@
         "storage"
     }
 }
+=======
+  "manifest_version": 3,
+  "name": "Go-go Health",
+  "description": "App that takes in a food input and outputs nutrition value from an API",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": ""
+  },
+  "icons": {
+    "128": "popup/Go_Go_Health.png"
+  }
+}
+>>>>>>> 2b34e28ebc4c9513026cc348c5d1d6893ad940d7
