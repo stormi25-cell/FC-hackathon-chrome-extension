@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "research",
-  "description": "resaerch extension",
+  "name": "Go-go Health",
+  "description": "App that takes in a food input and outputs nutrition value from an API",
   "version": "1.0",
   "action": {
-    "default_popup": "popup/index.html",
+    "default_popup": "popup/popup.html",
     "default_title": "",
     "default_icon": ""
   },
@@ -15,6 +15,6 @@
     "128": "images/"
   },
   "background": {
-    "service_worker": "background/background.js"
+    "service_worker": "background.js"
   }
 }
