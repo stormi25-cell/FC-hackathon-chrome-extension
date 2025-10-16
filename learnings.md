@@ -2,6 +2,8 @@ https://github.com/orgs/community/discussions/55626
 
 -renaming 'master' branch to 'main' for more inclusive language.
 
+chrome doesn't like inline event listeners, which is why we have to use them in the JS
+
 Different keys from nutrition API:
 https://api-ninjas.com/api/nutrition
 

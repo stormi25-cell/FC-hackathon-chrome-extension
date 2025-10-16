@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- <script defer src="main.ts"> </script> -->
+    <!-- <script defer src="popup/popup.js">
+      function click() {
+        alert('oop');
+      }
+    </script> -->
   </head>
-  <br>
-    <script src="popup.js"> </script>
+  <body>
+    <br />
     <div>
       <form id="food-form">
         <label for="food"></label>
-        <input type="text" id="food" name="food" placeholder="Enter a food">
-    </form>
+        <input type="text" id="food" name="food" placeholder="Enter a food" />
+      </form>
     </div>
-    <section>
-      
+    <section id="output">
+      <h1>output</h1>
     </section>
 
-
-    <button type="button" id="submit" onclick="FUNCTION()">Submit</button><br>
-    <section id="info"> Info Box </section>
+    <button type="button" id="submit">Submit</button><br />
+    <section id="info">
+      Info Box
+      <section>
+        <p>TestBox</p>
+      </section>
+    </section>
+    <script src="popup/popup.js"></script>
   </body>
 </html>
-
