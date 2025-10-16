@@ -7,6 +7,10 @@ chrome doesn't like inline event listeners, which is why we have to use them in 
 Different keys from nutrition API:
 https://api-ninjas.com/api/nutrition
 
+putting files into the same folder will help because it allows for easier access instead of needing the relative path
+
+chrome doesn't like in-line functions and we have to use function calls from js
+
 [
 {
 "name": "egg",
