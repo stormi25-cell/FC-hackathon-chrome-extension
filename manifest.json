@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "research",
+  "version": "1.0.0",
+  "description": "research extension",
+  "action": {
+    "default_title": "",
+    "default_icon": ""
+  }
+}
