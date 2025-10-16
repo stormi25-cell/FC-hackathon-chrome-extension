@@ -1,27 +1,4 @@
 {
-<<<<<<< HEAD
-    "manifest_version": 3,
-    "name":,
-    "description":,
-    "version": "1.0", 
-    "action":{
-        "default_popup": "popup/index.html"
-    },
-    "icons":{
-        "16":"images/",
-        "32":"images/",
-        "48":"images/",
-        "128":"images/"
-    },
-    "background": {
-        "service_worker":"background/background.js"
-    },
-
-    "permissions":{
-        "storage"
-    }
-}
-=======
   "manifest_version": 3,
   "name": "Go-go Health",
   "description": "App that takes in a food input and outputs nutrition value from an API",
@@ -34,4 +11,3 @@
     "128": "popup/Go_Go_Health.png"
   }
 }
->>>>>>> 2b34e28ebc4c9513026cc348c5d1d6893ad940d7
