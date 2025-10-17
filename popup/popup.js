@@ -10,13 +10,24 @@ const button = document.getElementById('submit');
 // let count = 0;
 const input = document.getElementById('food');
 
-button.addEventListener('onclick', () => {
-  console.log('string');
-}); //don't pass the function invocation through the event listener
+// button.addEventListener('click', () => {
+//   console.log('string');
+// }); //don't pass the function invocation through the event listener
 
-button.addEventListener('onclick', testInput);
+// button.addEventListener('click', testInput);
+button.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // ++count;
+  console.log('anything');
+  // console.log(count);
+  console.log(input);
+  console.log(button);
+  console.log(input.value);
+  console.log(button.value);
+});
 
-function testInput() {
+function testInput(e) {
+  e.preventDefault();
   // ++count;
   console.log('anything');
   // console.log(count);
@@ -99,3 +110,34 @@ testItem = [
 // function reset() {
 //   alert('Reset');
 // }
+
+async function getFood() {
+  const foods = ['apple', 'egg', 'banana'];
+
+  for (let food in foods) {
+    try {
+      const updatedURL = apiURL + foods[food]; //URL that's being fetched / the call is being made to search
+      console.log(updatedURL);
+      const response = await fetch(updatedURL, {
+        headers: {
+          'X-API-KEY': apiKey,
+        },
+      });
+      if (!response.ok) {
+        console.log('ERROR: ' + response.status);
+        throw new Error('Food Unavailable');
+      }
+      console.log(response);
+      const data = await response.json();
+      console.log(data);
+      console.log(JSON.stringify(data));
+      console.log(data['sugar_g']);
+      document.getElementById('NuInf').innerHTML += JSON.stringify(data);
+      // document.getElementById('NuInf').appendChild(JSON.stringify(data));
+    } catch (err) {
+      console.log('Fetch Error: ', err);
+    }
+  }
+}
+
+getFood();
