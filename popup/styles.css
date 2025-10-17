@@ -1,7 +1,7 @@
 body {
   background-color: aqua;
   color: black;
-  font-family:darlington-signature;
+  font-family: darlington-signature;
   padding: 10px;
   max-width: 100%;
   text-align: center;
@@ -13,9 +13,4 @@ body {
   padding: 10px;
   margin-top: 10px;
   border-radius: 6px;
-}
-
-.NuInf {
-  word-spacing: 4px;
-  text-align: center;
 }
