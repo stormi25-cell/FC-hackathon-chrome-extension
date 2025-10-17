@@ -5,9 +5,15 @@ body {
   padding: 10px;
   max-width: 100%;
   text-align: center;
+  word-spacing: 2px;
 }
 
 #submit {
   color: green;
 }
 
+.NuInf {
+  word spacing: 4px;
+  text-align: center;
+  
+}

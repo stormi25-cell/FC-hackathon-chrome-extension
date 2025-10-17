@@ -6,7 +6,7 @@ const apiURL = 'https://api.api-ninjas.com/v1/nutrition?query=';
 // const input = document.getElementById('food').value;
 
 const button = document.getElementById('submit');
-// button.addEventListener('onclick', getFood());
+button.addEventListener('onclick', getFood());
 // let count = 0;
 const input = document.getElementById('food');
 
@@ -15,16 +15,17 @@ const input = document.getElementById('food');
 // }); //don't pass the function invocation through the event listener
 
 // button.addEventListener('click', testInput);
-button.addEventListener('submit', (e) => {
-  e.preventDefault();
-  // ++count;
-  console.log('anything');
-  // console.log(count);
-  console.log(input);
-  console.log(button);
-  console.log(input.value);
-  console.log(button.value);
-});
+// button.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   getFood();
+//   // ++count;
+//   console.log('anything');
+//   // console.log(count);
+//   console.log(input);
+//   console.log(button);
+//   console.log(input.value);
+//   console.log(button.value);
+// });
 
 function testInput(e) {
   e.preventDefault();
