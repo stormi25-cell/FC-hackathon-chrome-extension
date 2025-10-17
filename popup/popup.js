@@ -10,7 +10,36 @@ const button = document.getElementById('submit');
 // let count = 0;
 const input = document.getElementById('food');
 
-button.addEventListener('onclick', testInput());
+button.addEventListener('onclick', () => {
+  console.log('string');
+}); //don't pass the function invocation through the event listener
+
+button.addEventListener('onclick', testInput);
+
+function testInput() {
+  // ++count;
+  console.log('anything');
+  // console.log(count);
+  console.log(input);
+  console.log(button);
+  console.log(input.value);
+  console.log(button.value);
+  // document.getElementById('NuInf').innerHTML = `
+  //       name: 'egg',
+  //       calories: 'Only available for premium subscribers.',
+  //       serving_size_g: 'Only available for premium subscribers.',
+  //       fat_total_g: 9.7,
+  //       fat_saturated_g: 3.1,
+  //       protein_g: 'Only available for premium subscribers.',
+  //       sodium_mg: 139,
+  //       potassium_mg: 199,
+  //       cholesterol_mg: 371,
+  //       carbohydrates_total_g: 0.7,
+  //       fiber_g: 0,
+  //       sugar_g: 0.4,`;
+  // console.log(testItem['name']);
+  // console.log(testItem[0]['name']);
+}
 
 // const form = document.querySelector('submit', (e) => {
 //   e.preventDefault();
@@ -62,31 +91,6 @@ testItem = [
 //     console.log('Fetch Error: ', err);
 //   }
 // }
-
-function testInput() {
-  // ++count;
-  console.log('anything');
-  // console.log(count);
-  console.log(input);
-  console.log(button);
-  console.log(input.value);
-  console.log(button.value);
-  // document.getElementById('NuInf').innerHTML = `
-  //       name: 'egg',
-  //       calories: 'Only available for premium subscribers.',
-  //       serving_size_g: 'Only available for premium subscribers.',
-  //       fat_total_g: 9.7,
-  //       fat_saturated_g: 3.1,
-  //       protein_g: 'Only available for premium subscribers.',
-  //       sodium_mg: 139,
-  //       potassium_mg: 199,
-  //       cholesterol_mg: 371,
-  //       carbohydrates_total_g: 0.7,
-  //       fiber_g: 0,
-  //       sugar_g: 0.4,`;
-  // console.log(testItem['name']);
-  // console.log(testItem[0]['name']);
-}
 
 // const reset = document
 //   .getElementById('reset')
