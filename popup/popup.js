@@ -117,7 +117,7 @@ async function getFood() {
   for (let food in foods) {
     try {
       const updatedURL = apiURL + foods[food]; //URL that's being fetched / the call is being made to search
-      console.log(updatedURL);
+      // console.log(updatedURL);
       const response = await fetch(updatedURL, {
         headers: {
           'X-API-KEY': apiKey,
@@ -127,13 +127,30 @@ async function getFood() {
         console.log('ERROR: ' + response.status);
         throw new Error('Food Unavailable');
       }
-      console.log(response);
+      // console.log(response);
       const data = await response.json();
-      console.log(data);
-      console.log(JSON.stringify(data));
-      console.log(data['sugar_g']);
-      document.getElementById('NuInf').innerHTML += JSON.stringify(data);
-      // document.getElementById('NuInf').appendChild(JSON.stringify(data));
+      // console.log(data);
+      // console.log(data[0]['name']);
+      // console.log(JSON.stringify(data));
+      const str = JSON.stringify(data[0]);
+      // console.log(str);
+      // console.log(JSON.stringify(data[0]));
+      /*
+        append a child unordered list to nuInf
+        then in the for in loop, append each as a list item to the ul
+
+      */
+      for (const key in data[0]) {
+        console.log(`${key}: ${data[0][key]}\n`);
+        document.getElementById(
+          'NuInf'
+        ).innerHTML += `\n${key}: ${data[0][key]}\n`;
+      }
+
+      //have to figure out how to go through the entire object and print the items outside of the object, because currently, it prints like: (after invocation)
+
+      // document.getElementById('NuInf').innerHTML += JSON.stringify(data); //this is bruteforce
+      // document.getElementById('NuInf').appendChild(JSON.stringify(data)); //this doesn't work yet, but would be more helpful if it did
     } catch (err) {
       console.log('Fetch Error: ', err);
     }
