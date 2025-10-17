@@ -16,6 +16,6 @@ body {
 }
 
 .NuInf {
-  word spacing: 4px;
+  word-spacing: 4px;
   text-align: center;
 }
