@@ -1,7 +1,7 @@
 body {
   background-color: aqua;
   color: black;
-  font-family:darlington-signature;
+  font-family: darlington-signature;
   padding: 10px;
   max-width: 100%;
   text-align: center;
@@ -10,4 +10,3 @@ body {
 #submit {
   color: green;
 }
-
