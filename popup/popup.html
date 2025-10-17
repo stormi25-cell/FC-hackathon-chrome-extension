@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go!Go!Health</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script defer src="popup.js"></script>
+    <!-- <script defer src="popup.js"></script> -->
   </head>
   <body id="body">
     <br />
     <div>
-      <form id="food-form">
-        <label for="food">Food:</label>
+      <form id="food-form" action="">
+        <label for="food" required>Food:</label>
         <input
           type="text"
           id="food"
           name="food"
           placeholder="Enter a food"
-          maxlength="15"
-          required
+          maxlength="48"
         />
         <!-- <input id="submit" type="submit" /><br /> -->
-        <button id="submit" class="submit" type="submit">Submit</button><br />
+        <button id="submit" type="submit" >Submit</button><br />
+        <script src="popup.js"></script>
         <input id="reset" type="reset" />
         <!-- <button id="reset" class="reset" type="button">Reset</button><br /> -->
       </form>
